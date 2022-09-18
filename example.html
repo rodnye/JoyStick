@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #joystick {
+        width: 150px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  
+  <body>
+    
+    <!-- JOYSTICK CONTAINER -->
+    <div id="joystick"></div>
+    
+    <div id="show">
+      fraccion en x: 0 <br>
+      fraccion en y: 0 <br>
+      distancia del centro: 0 <br>
+    </div>
+    
+    
+    
+    
+    <script src="joystick.js"></script>
+    <script>
+      let container = document.getElementById("joystick");
+      let show = document.getElementById("show");
+      
+      let joy = new JoyStick(container, {
+        fillStyle: "#ff0000",
+        callback: callback,
+      });
+      
+      function callback (x, y) {
+        show.innerText = "x: " + x + "\ny: " + y + "\ns: " + joy.s;
+      }
+    </script>
+  </body>
+</html>
