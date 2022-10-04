@@ -40,14 +40,18 @@ joy.y
 
 ## Constructor
 `new JoyStick(container, options)`
+| Argumento | Tipo  | Descripción  |
+|:---------:|:-----:|:-------------|
 | `container` | `HTMLDivElement` | (requerido) el elemento div donde se insertará el joystick |
 | `options` | `Object` | (opcional) algunos ajustes extras |
 | `options.fillStyle` | `color` | color de relleno de la palanca |
 | `options.strokeStyle` | `color` | color del borde del joystick |
 | `options.eventArea` | `HTMLDivElement` | elemento donde ocurrirán los eventos ontouch del joystick (por defecto es el elemento contenedor) |
-
+| `options.callback` | `function` | función que será llamada cada vez que se mueva el joystick |
 
 ## Propiedades
+| Propiedad | Tipo  | Descripción  |
+|:---------:|:-----:|:-------------|
 | `x` | `number` | Fracción de -1 a 1 de la posición de la palanca en el eje "x" |
 | `y` | `number` | Fracción de -1 a 1 de la posición de la palanca en el eje "y" |
 | `s` | `number` | Fracción de 0 a 1 indicando la distancia entre la palanca y el centro del joystick |
