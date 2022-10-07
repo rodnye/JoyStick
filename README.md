@@ -40,6 +40,7 @@ joy.y
 
 ## Constructor
 `new JoyStick(container, options)`
+
 | Argumento | Tipo  | Descripción  |
 |:---------:|:-----:|:-------------|
 | `container` | `HTMLDivElement` | (requerido) el elemento div donde se insertará el joystick |
@@ -50,12 +51,23 @@ joy.y
 | `options.callback` | `function` | función que será llamada cada vez que se mueva el joystick |
 
 ## Propiedades
-| Propiedad | Tipo  | Descripción  |
-|:---------:|:-----:|:-------------|
-| `x` | `number` | Fracción de -1 a 1 de la posición de la palanca en el eje "x" |
-| `y` | `number` | Fracción de -1 a 1 de la posición de la palanca en el eje "y" |
-| `s` | `number` | Fracción de 0 a 1 indicando la distancia entre la palanca y el centro del joystick |
-| `pressed` | `boolean` | Indica si el joystick está siendo usado o no |
-| `container` | `HTMLDivElement` | El contenedor en el que se encuentra el canvas |
-| `canvas` | `HTMLCanvasElement` | El canvas en el que se dibuja el joystick |
-| `context` | `CanvasRenderingContext2D` | El contexto usado del canvas |
+### `x`
+`number`, Fracción de -1 a 1 de la posición de la palanca en el eje "x" 
+
+### `y`
+`number`, Fracción de -1 a 1 de la posición de la palanca en el eje "y"
+
+### `s`
+`number`, Fracción de 0 a 1 indicando la distancia entre la palanca y el centro del joystick
+
+### `pressed`
+`boolean`, Indica si el joystick está siendo usado o no.
+
+### `container`
+`HTMLDivElement`, El contenedor en el que se encuentra el canvas
+
+### `canvas`
+`HTMLCanvasElement`, El canvas en el que se dibuja el joystick
+
+### `context` 
+`CanvasRenderingContext2D`, El contexto usado del canvas
