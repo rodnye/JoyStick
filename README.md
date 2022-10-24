@@ -1,4 +1,5 @@
 # JoyStick
+![joystick red](https://raw.githubusercontent.com/RodnyE/JoyStick/main/src/demo.gif)  
 Librería para implementar un joystick con canvas en javascript y html.
 El JoyStick usa los eventos ontouch de html, por lo que no funcionará si el navegador usado no tiene soporte.
 Puedes ver un ejemplo en código [aquí](https://github.com/RodnyE/JoyStick/blob/main/example.html)
@@ -52,22 +53,29 @@ joy.y
 
 ## Propiedades
 ### `x`
-`number`, Fracción de -1 a 1 de la posición de la palanca en el eje "x" 
+`number`  
+Fracción de -1 a 1 de la posición de la palanca en el eje "x" 
 
 ### `y`
-`number`, Fracción de -1 a 1 de la posición de la palanca en el eje "y"
+`number`  
+Fracción de -1 a 1 de la posición de la palanca en el eje "y"
 
 ### `s`
-`number`, Fracción de 0 a 1 indicando la distancia entre la palanca y el centro del joystick
+`number`  
+Fracción de 0 a 1 indicando la distancia entre la palanca y el centro del joystick
 
 ### `pressed`
-`boolean`, Indica si el joystick está siendo usado o no.
+`boolean`  
+Indica si el joystick está siendo usado o no.
 
 ### `container`
-`HTMLDivElement`, El contenedor en el que se encuentra el canvas
+`HTMLDivElement`  
+El contenedor en el que se encuentra el canvas
 
 ### `canvas`
-`HTMLCanvasElement`, El canvas en el que se dibuja el joystick
+`HTMLCanvasElement`  
+El canvas en el que se dibuja el joystick
 
 ### `context` 
-`CanvasRenderingContext2D`, El contexto usado del canvas
+`CanvasRenderingContext2D`  
+El contexto usado del canvas
